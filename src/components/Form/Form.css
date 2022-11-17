@@ -1,0 +1,26 @@
+.content-header{
+  color: #E4E4E4;
+  font-family: 'Ledger';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.content-form{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pledge-button{
+  width: 14vw;
+  padding: 0.3em;
+  margin-top: 0.25em;
+  border-radius: 25px;
+  background-color: #85BFD1;
+  font-family: 'Ledger';
+  font-style: normal;
+  font-size: 22px;
+  border: none;
+}

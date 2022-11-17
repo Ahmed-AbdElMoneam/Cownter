@@ -1,0 +1,16 @@
+.content-quran-list{
+	width: 37.6vw;
+	height: 25vh;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	Overflow-y: scroll;
+	border: none;
+}
+
+.quran-list-item{
+	/* border: 1px solid black; */
+	padding-bottom: 0.25em;
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+	background-color: #F8F8F8;
+}

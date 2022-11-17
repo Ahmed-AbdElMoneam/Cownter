@@ -1,0 +1,21 @@
+.title-container{
+  width: 78%;
+  height: 24%;
+  margin: 8% auto 0 auto;
+  padding-top: 1%;
+  background-color: #37623E;
+  opacity: 0.7;
+}
+
+.title-header, .title-paragraph{
+  color: #E4E4E4;
+  text-align: center;
+  font-family: 'Ledger';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.title-paragraph{
+  padding: 0 10%;
+  text-align: left;
+}

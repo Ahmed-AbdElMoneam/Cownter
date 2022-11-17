@@ -1,0 +1,68 @@
+.juz-review{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	padding: 0 0.25em;
+}
+
+.juz-review-items p, .juz-review-items input, .juz-review-items label{
+	margin: 0;
+	padding: 0;
+}
+
+.juz-review-items input, .juz-review-items label{
+	padding: 0.2em 0.3em;
+}
+
+.juz-radios{
+	background-color: #D9D9D9;
+	border-radius: 20px;
+	padding: 0 0.3em;
+	margin-right: 4vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.juz-radio-half-label{
+	font-family: 'Ledger';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+
+.full-juz-section{
+	padding: 0.2em 0.2em;
+	border-left: 1px solid #8C8C8C;
+	display: flex;
+	flex-direction: row;
+	;
+}
+
+#full-juz{
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.juz-radio-full-label{
+	font-family: 'Ledger';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+::-webkit-scrollbar {
+	width: 0.75vw;
+	background-color: #F8F8F8;
+}
+::-webkit-scrollbar-thumb {
+	background: #B2B2B2CC;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	box-shadow: 5px 10px 18px #888888
+}

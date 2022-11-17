@@ -1,0 +1,19 @@
+.content-counter-list{
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+}
+
+.content-counter-item{
+	margin-bottom: 16px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.content-counter-adder{
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

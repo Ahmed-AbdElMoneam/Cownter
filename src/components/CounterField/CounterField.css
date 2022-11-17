@@ -1,0 +1,38 @@
+.field-div{
+	width: 80px;
+	height: 43px;
+	border-radius: 25px 0 0 25px;
+	background-color: #D9D9D9;
+	color: black;
+	text-align: center;
+	border: none;
+	font-family: 'Ledger';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1em;
+}
+
+.field{
+	width: 160px;
+	height: 45px;
+	border-radius: 0 25px 25px 0;
+	color: #BDBFBD;
+	text-align: center;
+	appearance: none;
+	border: none;
+	font-family: 'Ledger';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	/* line-height: 25px; */
+}
+
+.field:hover{
+	cursor: pointer;
+}
+
+.field:focus{
+	outline: none;
+	padding-left: 10px;
+	text-align: left;
+}
