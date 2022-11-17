@@ -3,6 +3,7 @@
   font-family: 'Ledger';
   font-style: normal;
   font-weight: 400;
+  text-align: center;
 }
 
 .content-form{
@@ -21,6 +22,6 @@
   background-color: #85BFD1;
   font-family: 'Ledger';
   font-style: normal;
-  font-size: 22px;
+  font-size: 1.3em;
   border: none;
 }

@@ -7,7 +7,7 @@
 
 .quran-list-title{
 	margin: 0.25em;
-	font-size: 25px;
+	font-size: 1.7em;
 	text-align: center;
 	font-family: 'Ledger';
 	font-style: normal;
@@ -16,7 +16,7 @@
 .quran-categories{
 	margin: 0;
 	padding-left: 0;
-	font-size: 15px;
+	font-size: 1em;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

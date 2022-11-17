@@ -1,8 +1,8 @@
 .title-container{
   width: 78%;
-  height: 24%;
+  /* height: 24%; */
   margin: 8% auto 0 auto;
-  padding-top: 1%;
+  padding: 1% 0;
   background-color: #37623E;
   opacity: 0.7;
 }
@@ -16,6 +16,7 @@
 }
 
 .title-paragraph{
+  font-size: 1em;
   padding: 0 10%;
   text-align: left;
 }

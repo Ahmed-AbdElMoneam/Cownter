@@ -1,6 +1,6 @@
 .field-div{
-	width: 80px;
-	height: 43px;
+	width: 10vw;
+	height: 5.6vh;
 	border-radius: 25px 0 0 25px;
 	background-color: #D9D9D9;
 	color: black;
@@ -13,8 +13,8 @@
 }
 
 .field{
-	width: 160px;
-	height: 45px;
+	width: 16vw;
+	height: 5.9vh;
 	border-radius: 0 25px 25px 0;
 	color: #BDBFBD;
 	text-align: center;
@@ -23,8 +23,7 @@
 	font-family: 'Ledger';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 20px;
-	/* line-height: 25px; */
+	font-size: 1.3em;
 }
 
 .field:hover{
