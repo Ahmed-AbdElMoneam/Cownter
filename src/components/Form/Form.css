@@ -7,11 +7,18 @@
 }
 
 .content-form{
-  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-form-inputs{
+  height: 63vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  /* border: 1px solid black; */
 }
 
 .pledge-button{
@@ -24,4 +31,12 @@
   font-style: normal;
   font-size: 1.3em;
   border: none;
+  position: fixed;
+  top: 82vh;
+  opacity: 0.4;
+}
+
+.pledge-button:hover{
+  cursor: pointer;
+  opacity: 1;
 }

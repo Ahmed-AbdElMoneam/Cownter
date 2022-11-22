@@ -13,14 +13,15 @@ const AddField = ({ handleAddingField }) => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="icon icon-tabler icon-tabler-circle-plus"
-          width="20"
-          height="20"
+          width="3vw"
+          height="3vh"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="#2c3e50"
           fill="none"
           strokeLinecap="round"
           strokeLinejoin="round"
+          // style={{ width: "30%", height: "30%" }}
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <circle cx="12" cy="12" r="9" />

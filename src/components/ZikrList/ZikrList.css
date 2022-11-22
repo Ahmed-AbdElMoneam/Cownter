@@ -5,16 +5,22 @@
 }
 
 .content-counter-item{
+	height: 6vh;
 	margin-bottom: 16px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	overflow: hidden;
 }
 
 .content-counter-adder{
+	height: 4vh;
   margin-top: 0;
+	margin-bottom: 4vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
-	align-items: center;
+  align-items: center;
+	overflow: hidden;
+	/* border: 1px solid black; */
 }

@@ -4,14 +4,51 @@ import QuranList from "../QuranList/QuranList";
 import "./Form.css";
 
 const Form = () => {
-  const [salawat, setSalawat] = useState("placeholder");
-  const [tasbeeh, setTasbeeh] = useState("placeholder");
-  const [takbeer, setTakbeer] = useState("placeholder");
+  const [fields, setFields] = useState([
+    { id: 0, field_title: "Salawat" },
+    { id: 1, field_title: "Tasbeeh" },
+  ]);
   const [juzs, setJuzs] = useState([]);
 
-  const handleSalawat = (e) => setSalawat(e.target.value);
-  const handleTasbeeh = (e) => setTasbeeh(e.target.value);
-  const handleTakbeer = (e) => setTakbeer(e.target.value);
+  const handleTitleChange = (e) => {
+    const target_field_id = e.target.id;
+    const target_field_type = e.target.value;
+    setFields((prevFields) => {
+      const other_fields = prevFields.filter(
+        (field) => field.id != target_field_id
+      );
+      const ordered_fields = [
+        ...other_fields,
+        { id: Number(target_field_id), field_title: target_field_type },
+      ];
+      ordered_fields.sort((a, b) => a.id - b.id);
+      return ordered_fields;
+    });
+  };
+
+  const handleZikrNumber = (e) => {
+    const field_id = e.target.id;
+    const field_name = e.target.name;
+    const zikr_number = e.target.value;
+    setFields((prevFields) => {
+      const other_fields = prevFields.filter((field) => field.id != field_id);
+      const ordered_fields = [
+        ...other_fields,
+        {
+          id: Number(field_id),
+          field_title: field_name,
+          zikr_number: zikr_number,
+        },
+      ];
+      ordered_fields.sort((a, b) => a.id - b.id);
+      return ordered_fields;
+    });
+  };
+
+  const handleAddingField = (e) => {
+    e.preventDefault();
+    setFields([...fields, { id: fields.length, field_title: "Takbeer" }]);
+  };
 
   const handleRadioChange = (e) => {
     const completed =
@@ -31,25 +68,27 @@ const Form = () => {
   };
 
   const submitted = {
-    salawat,
-    tasbeeh,
-    takbeer,
+    fields,
     juzs,
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(submitted);
+    console.log(submitted);
   };
-
   return (
     <>
       <h1 className="content-header">Your Baraka Pledge</h1>
       <form className="content-form" onSubmit={handleSubmit}>
-        <ZikrList
-          counter={[salawat, tasbeeh, takbeer]}
-          handleCounter={[handleSalawat, handleTasbeeh, handleTakbeer]}
-        />
-        <QuranList handleRadioChange={handleRadioChange} />
+        <div className="content-form-inputs">
+          <ZikrList
+            handleTitleChange={handleTitleChange}
+            handleZikrNumber={handleZikrNumber}
+            handleAddingField={handleAddingField}
+            fields={fields}
+          />
+          <QuranList handleRadioChange={handleRadioChange} />
+        </div>
         <button className="pledge-button">Pledge</button>
       </form>
     </>

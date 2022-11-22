@@ -18,8 +18,8 @@ code {
 /************************************ General View *************************************/
 .container{
   width: 100vw;
-  margin: 0 auto;
   height: 100vh;
+  margin: 0 auto;
   /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
@@ -30,6 +30,7 @@ code {
 /************************************ Title Section ************************************/
 .title-section{
   width: 50vw;
+  height: 100vh;
   background-image: url(./utils/mosque.svg);
   background-size: cover;
   background-position: center;
@@ -38,11 +39,14 @@ code {
 /*********************************** Content Section ***********************************/
 .content-section{
   width: 50vw;
+  height: 100vh;
+  margin-bottom: 10vh;
   background-color: #619E52;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  overflow-y: scroll;
 }
 /***************************************************************************************/
 /* @media screen and (max-width: 768px) {

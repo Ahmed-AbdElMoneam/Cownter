@@ -1,21 +1,13 @@
-import { useState } from "react";
 import CounterField from "../CounterField/CounterField";
 import AddField from "../AddField/AddField";
 import "./ZikrList.css";
 
-const ZikrList = ({ counter, handleCounter }) => {
-  const [fields, setFields] = useState([
-    { id: 0, field_title: "Salawat" },
-    { id: 1, field_title: "Tasbeeh" },
-  ]);
-
-  const handleAddingField = (e) => {
-    e.preventDefault();
-    if (fields.length === 2) {
-      setFields([...fields, { id: fields.length, field_title: "Takbeer" }]);
-    }
-  };
-
+const ZikrList = ({
+  handleTitleChange,
+  handleZikrNumber,
+  handleAddingField,
+  fields,
+}) => {
   return (
     <div>
       <ul className="content-counter-list">
@@ -24,8 +16,9 @@ const ZikrList = ({ counter, handleCounter }) => {
             <li key={field.id} className="content-counter-item">
               <CounterField
                 field_title={field.field_title}
-                handleCounter={handleCounter[field.id]}
-                counter={counter[field.id]}
+                field_id={field.id}
+                handleTitleChange={handleTitleChange}
+                handleZikrNumber={handleZikrNumber}
               />
             </li>
           );
