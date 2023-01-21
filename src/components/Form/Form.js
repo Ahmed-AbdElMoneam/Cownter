@@ -153,7 +153,7 @@ const Form = ({ setOpenModal, handleGetData }) => {
 
     full
       ? (numeric_value_read = 1)
-      : full === false
+      : full === false && (first === true || second === true)
       ? (numeric_value_read = 0.5)
       : (numeric_value_read = 0);
 
