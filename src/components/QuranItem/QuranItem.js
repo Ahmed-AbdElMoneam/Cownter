@@ -11,15 +11,6 @@ const QuranItem = ({
   const first_check = useRef(false);
   const second_check = useRef(false);
   const full_check = useRef(false);
-  // const added_radio_check = useRef(false);
-
-  // const handleFirstChange = (e) => {
-  //   if (full_check.current.checked == true) {
-  //     added_radio_check.current.checked = true;
-  //   } else if (second_check.current.checked == true) {
-  //     full_check.current.checked = true;
-  //   }
-  // };
 
   const handleFirstChange = () => {
     if (full_check.current.checked === true) {
@@ -29,14 +20,6 @@ const QuranItem = ({
     }
   };
 
-  // const handleSecondChange = (e) => {
-  //   if (full_check.current.checked === true) {
-  //     added_radio_check.current.checked = true;
-  //   } else if (first_check.current.checked === true) {
-  //     full_check.current.checked = true;
-  //   }
-  // };
-
   const handleSecondChange = () => {
     if (full_check.current.checked === true) {
       full_check.current.checked = false;
@@ -44,30 +27,6 @@ const QuranItem = ({
       full_check.current.checked = true;
     }
   };
-
-  // const handleFullClick = () => {
-  //   console.log("clicked");
-  //   // full_check.current.checked = true;
-  //   // first_check.current.checked = true;
-  //   // second_check.current.checked = true;
-  //   if (
-  //     first_check.current.checked === true &&
-  //     second_check.current.checked === false
-  //   ) {
-  //     second_check.current.checked = true;
-  //     full_check.current.checked = true;
-  //   } else if (
-  //     second_check.current.checked === true &&
-  //     first_check.current.checked === false
-  //   ) {
-  //     first_check.current.checked = true;
-  //     full_check.current.checked = true;
-  //   } else {
-  //     first_check.current.checked = true;
-  //     second_check.current.checked = true;
-  //     full_check.current.checked = true;
-  //   }
-  // };
 
   const handleFullChange = () => {
     if (
@@ -155,20 +114,6 @@ const QuranItem = ({
             ref={full_check}
             onChange={handleFullChange}
           />
-          {/* <input
-            type="radio"
-            id="full-juz"
-            name={juz_radio}
-            value="3"
-            ref={full_check}
-            onClick={handleFullClick}
-          />
-          <input
-            type="radio"
-            name={juz_radio}
-            style={{ display: "none" }}
-            ref={added_radio_check}
-          /> */}
           <label className="juz-radio-full-label" id="full-juz">
             Full
           </label>

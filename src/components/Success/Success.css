@@ -27,8 +27,6 @@
 .success-message i {
   color: #9ABC66;
   font-size: 100px;
-  /* line-height: 200px; */
-  /* margin-left:-15px; */
 }
 /***************************************************************************************/
 @media screen and (max-width: 768px) {

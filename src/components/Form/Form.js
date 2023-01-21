@@ -2,8 +2,8 @@ import { useEffect, useState, useRef } from "react";
 import ZikrList from "../ZikrList/ZikrList";
 import QuranList from "../QuranList/QuranList";
 import "./Form.css";
-import { totalRef, updateRef } from "../../firebase";
-import { getDocs, updateDoc } from "@firebase/firestore";
+import { totalRef } from "../../firebase";
+import { getDocs } from "@firebase/firestore";
 
 const Form = ({ setOpenModal, handleGetData }) => {
   const [loading, setLoading] = useState(true);
@@ -13,10 +13,6 @@ const Form = ({ setOpenModal, handleGetData }) => {
   ]);
   const [juzs, setJuzs] = useState([]);
   const [juz_total, setTotalJuzs] = useState([
-    // { zikr_type: "Salawat", count: 0 },
-    // { zikr_type: "Tasbeeh", count: 0 },
-    // { zikr_type: "Takbeer", count: 0 },
-    // { zikr_type: "Tahleel", count: 0 },
     { zikr_type: "juz_1", count: 0 },
     { zikr_type: "juz_2", count: 0 },
     { zikr_type: "juz_3", count: 0 },
@@ -56,7 +52,6 @@ const Form = ({ setOpenModal, handleGetData }) => {
     getDocs(totalRef)
       .then((snapshot) => {
         snapshot.docs.map((doc) => {
-          // console.log(doc.data().users_total);
           setUsersTotal(doc.data().users_total);
           setLoading(false);
         });
@@ -193,33 +188,12 @@ const Form = ({ setOpenModal, handleGetData }) => {
     });
   };
 
-  // const submitted = {
-  //   azkar,
-  //   juzs,
-  //   // juz_total,
-  //   // users_total,
-  // };
-
   const handlePledge = (e) => {
     e.preventDefault();
-    // console.log(submitted);
-
     const azkar_total = azkarSummer();
 
     setOpenModal(true);
     handleGetData(azkar, juzs, azkar_total, juz_total, users_total);
-
-    // let totalData = {
-    //   // juz_total,
-    //   users_total: juz_total,
-    // };
-
-    // addDoc(updateRef, totalData).then(() => {
-    //   console.log("total added");
-    //   // window.location.reload();
-    //   // formRef.current.reset();
-    // });
-    // updateDoc(updateRef, totalData);
   };
 
   if (!loading) {

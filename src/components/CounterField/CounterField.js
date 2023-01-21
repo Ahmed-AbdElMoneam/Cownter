@@ -11,12 +11,11 @@ const CounterField = ({
 
   const handleFieldValue = (e) => {
     setVal(e.target.value);
-    // console.log(e.target.value);
   };
 
   return (
     <>
-      {field_id == 0 && (
+      {field_id === 0 && (
         <input
           type="text"
           name={field_title}

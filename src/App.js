@@ -53,7 +53,6 @@ function App() {
       };
       let totalData = {
         users_total: arr,
-        // users_total: user_total,
       };
       updateDoc(updateRef, totalData);
       addDoc(pledgeRef, pledgeData).then(() => {
