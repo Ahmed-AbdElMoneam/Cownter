@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Baraka Pledge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Built With
 
-## Available Scripts
+* React.js
+* CSS
+* Firebase Firestore
 
-In the project directory, you can run:
+## Project description
 
-### `npm start`
+Baraka Pledge is a Counter System Application designed to record Azkar & Juzs Pledges. Baraka Pledge is implemented with React.js for Front End development, Firebase Firestore for handling data and Firebase hosting to host the application. Application's Front End is responsive and implemented with componentization principle used in React.js. Also, Records contain the name and Email of the person who pledged. Additionally, His Azkar, Juzs and total of his record. Finally, Total of all users' Records can be found in the firestore.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshots
+![1](https://user-images.githubusercontent.com/68257208/213835857-0b69bc9b-6a46-46c1-9281-8530c4b64284.png)
+![2](https://user-images.githubusercontent.com/68257208/213835867-56846a15-ae3a-45d4-8b50-9b54db56085a.png)
+![3](https://user-images.githubusercontent.com/68257208/213835874-5febffd9-739f-45f2-9ae1-92d072988b0d.png)
+![4](https://user-images.githubusercontent.com/68257208/213835881-a491c300-29a7-464e-8313-d82d6323776b.png)
+![5](https://user-images.githubusercontent.com/68257208/213835883-1153df68-6d7e-41ac-a650-e0a343f2e957.png)
+![6](https://user-images.githubusercontent.com/68257208/213835891-988c4f38-d328-4c5e-b4c7-97dd14901297.jpg)
+![7](https://user-images.githubusercontent.com/68257208/213835897-33e51099-6ca3-4797-8855-b367d858a71b.jpg)
+![8](https://user-images.githubusercontent.com/68257208/213835908-0e84a29b-edf5-40d1-9970-e269fe860475.jpg)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Link
+https://baraka-pledge.web.app/
 
-### `npm test`
+## Compatibility
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+All features are usable across modern desktop, tablet, and phone browsers in all sizes
 
-### `npm run build`
+## Contact
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* ### Ahmed Mohamed
+* ### ahmedabdelmoneam755@gmail.com
