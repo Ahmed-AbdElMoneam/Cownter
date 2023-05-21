@@ -11,7 +11,7 @@
 Baraka Pledge is a Counter System Application designed to record Azkar & Juzs Pledges. Baraka Pledge is implemented with React.js for Front End development, Firebase Firestore for handling data and Firebase hosting to host the application. Application's Front End is responsive and implemented with componentization principle used in React.js. Also, Records contain the name and Email of the person who pledged. Additionally, His Azkar, Juzs and total of his record. Finally, Total of all users' Records can be found in the firestore.
 
 ## Screenshots
-![1](https://user-images.githubusercontent.com/68257208/213835857-0b69bc9b-6a46-46c1-9281-8530c4b64284.png)
+![213835857-0b69bc9b-6a46-46c1-9281-8530c4b64284](https://github.com/Ahmed-AbdElMoneam/baraka/assets/68257208/602cac99-1301-4fce-ae17-2c2bc492abbf)
 ![2](https://user-images.githubusercontent.com/68257208/213835867-56846a15-ae3a-45d4-8b50-9b54db56085a.png)
 ![3](https://user-images.githubusercontent.com/68257208/213835874-5febffd9-739f-45f2-9ae1-92d072988b0d.png)
 ![4](https://user-images.githubusercontent.com/68257208/213835881-a491c300-29a7-464e-8313-d82d6323776b.png)
