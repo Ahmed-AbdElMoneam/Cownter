@@ -8,8 +8,8 @@ import { getDocs } from "@firebase/firestore";
 const Form = ({ setOpenModal, handleGetData }) => {
   const [loading, setLoading] = useState(true);
   const [azkar, setAzkar] = useState([
-    { id: 0, field_title: "Salawat", zikr_number: Number(0) },
-    { id: 1, field_title: "Tasbeeh", zikr_number: Number(0) },
+    { id: 0, field_title: "Fantasy", zikr_number: Number(0) },
+    { id: 1, field_title: "Mystery", zikr_number: Number(0) },
   ]);
   const [juzs, setJuzs] = useState([]);
   const [juz_total, setTotalJuzs] = useState([
@@ -119,7 +119,7 @@ const Form = ({ setOpenModal, handleGetData }) => {
     e.preventDefault();
     setAzkar([
       ...azkar,
-      { id: azkar.length, field_title: "Takbeer", zikr_number: Number(0) },
+      { id: azkar.length, field_title: "Novella", zikr_number: Number(0) },
     ]);
   };
 
@@ -199,7 +199,7 @@ const Form = ({ setOpenModal, handleGetData }) => {
   if (!loading) {
     return (
       <>
-        <h1 className="content-header">Your Baraka Pledge</h1>
+        <h1 className="content-header">Your Cownter</h1>
         <form className="content-form" ref={formRef}>
           <div className="content-form-inputs">
             <ZikrList
@@ -214,7 +214,7 @@ const Form = ({ setOpenModal, handleGetData }) => {
             />
           </div>
           <button className="pledge-button" onClick={handlePledge}>
-            Pledge
+            Save
           </button>
         </form>
       </>

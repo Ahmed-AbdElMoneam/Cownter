@@ -45,7 +45,7 @@ const Modal = ({ closeModal, handleSubmit, success }) => {
         style={{ display: `${success ? "none" : "flex"}` }}
       >
         <div className="modalTitle">
-          <h1>Confirm your pledge</h1>
+          <h1>Confirm your read</h1>
           <div className="modalCloseButton">
             <button onClick={() => closeModal(false)}>&times;</button>
           </div>
@@ -105,7 +105,7 @@ const Modal = ({ closeModal, handleSubmit, success }) => {
             Cancel
           </button>
           <button type="submit" form="form">
-            Pledge
+            Send
           </button>
         </div>
       </div>

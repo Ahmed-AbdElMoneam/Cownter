@@ -134,7 +134,6 @@ const QuranJuzs = ({ handleChecker, users_total }) => {
           <li key={juz.id} className="quran-list-item">
             <QuranItem
               juz_number={juz.id}
-              juz_description={juz.juz_description}
               juz_radio={juz.id}
               handleChecker={handleChecker}
               total_pledged={users_total[juz.id - 1].count}

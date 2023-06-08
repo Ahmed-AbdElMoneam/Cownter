@@ -5,7 +5,7 @@ const AddField = () => {
     <>
       <input
         type="text"
-        value="Add more Zikr"
+        value="Add more genres"
         className="button-div"
         disabled
       />

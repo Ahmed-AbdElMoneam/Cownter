@@ -1,28 +1,29 @@
-.title-container{
+.title-container {
   width: 75%;
   /* height: 24%; */
   margin: 8% auto 2% auto;
   padding: 1% 0;
-  background-color: #37623ed0;
+  background-color: #529e8ebe;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.title-header, .title-paragraph{
-  color: #E4E4E4;
+.title-header,
+.title-paragraph {
+  color: #e4e4e4;
   text-align: center;
-  font-family: 'Ledger';
+  font-family: "Ledger";
   font-style: normal;
 }
 
-.title-paragraph{
+.title-paragraph {
   font-size: 1em;
   text-align: justify;
   width: 89%;
 }
 
-#heart-span{
+#heart-span {
   color: red;
   font-size: 1.2em;
 }

@@ -5,7 +5,7 @@ const Success = () => {
     <div className="success-message">
       <i className="checkmark">✓</i>
       <h1>Success!</h1>
-      <p>We received your pledge. Thanks</p>
+      <p>We received your record. Thanks</p>
     </div>
   );
 };

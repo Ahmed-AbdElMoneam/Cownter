@@ -16,4 +16,4 @@ const app = initializeApp(firebaseConfig);
 export const firestore = getFirestore(app);
 export const pledgeRef = collection(firestore, "pledge");
 export const totalRef = collection(firestore, "total");
-export const updateRef = doc(firestore, "total", "iAk4lNyEWAObxiJOlgtZ");
+export const updateRef = doc(firestore, "total", "MfgPdumAqGulpD8SbjOC");

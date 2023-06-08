@@ -33,10 +33,10 @@ const CounterField = ({
           onChange={(e) => handleTitleChange(e, field_id)}
           value={field_title}
         >
-          <option value="Salawat">Salawat</option>
-          <option value="Tasbeeh">Tasbeeh</option>
-          <option value="Takbeer">Takbeer</option>
-          <option value="Tahleel">Tahleel</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Novella">Novella</option>
+          <option value="Poetry">Poetry</option>
         </select>
       )}
       <input
@@ -49,7 +49,7 @@ const CounterField = ({
           handleFieldValue(e);
           handleZikrNumber(e, field_id, field_title, val);
         }}
-        placeholder="Zikr Count"
+        placeholder="Books Count"
       />
     </>
   );

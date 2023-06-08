@@ -1,13 +1,7 @@
 import { useRef } from "react";
 import "./QuranItem.css";
 
-const QuranItem = ({
-  juz_number,
-  juz_description,
-  juz_radio,
-  total_pledged,
-  handleChecker,
-}) => {
+const QuranItem = ({ juz_number, juz_radio, total_pledged, handleChecker }) => {
   const first_check = useRef(false);
   const second_check = useRef(false);
   const full_check = useRef(false);
@@ -54,22 +48,10 @@ const QuranItem = ({
             fontStyle: "normal",
             fontWeight: "400",
             fontSize: "20px",
-          }}
-        >
-          Juz {juz_number}
-        </p>
-        <p
-          style={{
-            fontFamily: "Ledger",
-            fontStyle: "normal",
-            fontWeight: "400",
-            fontSize: "12px",
-            backgroundColor: "#EAEAEA",
-            borderRadius: "10px",
             padding: "2px",
           }}
         >
-          {juz_description}
+          Book {juz_number}
         </p>
       </li>
       <li
@@ -126,6 +108,7 @@ const QuranItem = ({
             fontStyle: "normal",
             fontWeight: "400",
             fontSize: "20px",
+            padding: "10px",
           }}
         >
           {total_pledged}
